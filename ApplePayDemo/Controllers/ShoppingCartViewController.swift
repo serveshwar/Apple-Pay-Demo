@@ -12,18 +12,18 @@ import MapKit
 
 /// Class to display shopping cart and Apple Pay button
 class ShoppingCartViewController: UIViewController {
-    
+
     /// View carrying Apple pay button
     @IBOutlet weak var applePayView: UIView!
-    
+
     /// Payment handler instance
     var paymentHandler: PaymentHandler!
-    
+
     override func viewDidLoad() {
         // Check if Apple pay is supported on user's device
-        let result = PaymentHandler.applePayStatus();
+        let result = PaymentHandler.applePayStatus()
         var button: UIButton?
-        
+
         if result.canMakePayments {
             // If Apple pay supported then display Buy with Apple Pay button
             button = PKPaymentButton(paymentButtonType: .buy, paymentButtonStyle: .black)
@@ -33,27 +33,27 @@ class ShoppingCartViewController: UIViewController {
             button = PKPaymentButton(paymentButtonType: .setUp, paymentButtonStyle: .black)
             button?.addTarget(self, action: #selector(ShoppingCartViewController.setupPressed), for: .touchUpInside)
         }
-        
+
         // Add Apple pay button
         if button != nil {
             button!.autoresizingMask = [.flexibleLeftMargin, .flexibleRightMargin]
             applePayView.addSubview(button!)
         }
-        
+
     }
-    
+
     /// Method called when Buy with Apple pay button is pressed.
     ///
     /// - Parameter sender: Object invoking this method
     @objc func payPressed(sender: AnyObject) {
         paymentHandler = PaymentHandler()
-        paymentHandler.startPayment() { (success) in
+        paymentHandler.startPayment { (success) in
             if success {
                 self.performSegue(withIdentifier: "OrderPlacedSegue", sender: self)
             }
         }
     }
-    
+
     /// Method called when Setup Apple Pay button is pressed.
     ///
     /// - Parameter sender: Object invoking this method
@@ -62,4 +62,3 @@ class ShoppingCartViewController: UIViewController {
         passLibrary.openPaymentSetup()
     }
 }
-

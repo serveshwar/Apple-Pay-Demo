@@ -107,7 +107,7 @@
 				1B4676C02248BDCB00039879 /* AppDelegate.swift */,
 				1B4676F62248DF0000039879 /* Controllers */,
 				1B4676F52248DEEB00039879 /* Service */,
-				1B4676F72248DF1600039879 /* Supporting Files */,
+				1B4676F72248DF1600039879 /* Resources */,
 				1B4676F82248DF2900039879 /* UI */,
 			);
 			path = ApplePayDemo;
@@ -149,14 +149,14 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		1B4676F72248DF1600039879 /* Supporting Files */ = {
+		1B4676F72248DF1600039879 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				1B4676F42248D3AA00039879 /* ApplePayDemo.entitlements */,
 				1B4676C72248BDCD00039879 /* Assets.xcassets */,
 				1B4676CC2248BDCD00039879 /* Info.plist */,
 			);
-			path = "Supporting Files";
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		1B4676F82248DF2900039879 /* UI */ = {
@@ -484,10 +484,10 @@
 			buildSettings = {
 				APPLE_PAY_BUNDLE_PREFIX = "com.example.apple-samplecode";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "ApplePayDemo/Supporting Files/ApplePayDemo.entitlements";
+				CODE_SIGN_ENTITLEMENTS = ApplePayDemo/Resources/ApplePayDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = "ApplePayDemo/Supporting Files/Info.plist";
+				INFOPLIST_FILE = ApplePayDemo/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -504,10 +504,10 @@
 			buildSettings = {
 				APPLE_PAY_BUNDLE_PREFIX = "com.example.apple-samplecode";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "ApplePayDemo/Supporting Files/ApplePayDemo.entitlements";
+				CODE_SIGN_ENTITLEMENTS = ApplePayDemo/Resources/ApplePayDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = "ApplePayDemo/Supporting Files/Info.plist";
+				INFOPLIST_FILE = ApplePayDemo/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

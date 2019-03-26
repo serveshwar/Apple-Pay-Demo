@@ -81,7 +81,6 @@
                             <constraint firstItem="NLn-8G-dsk" firstAttribute="trailing" secondItem="Tt5-7d-8SB" secondAttribute="trailing" constant="16" id="ZUt-MO-oUR"/>
                             <constraint firstItem="NLn-8G-dsk" firstAttribute="bottom" secondItem="Tt5-7d-8SB" secondAttribute="bottom" constant="401" id="kWP-dD-cyS"/>
                             <constraint firstItem="Tt5-7d-8SB" firstAttribute="top" secondItem="cce-W7-wTU" secondAttribute="bottom" constant="20" id="oHR-0A-Z5S"/>
-                            <constraint firstItem="Tt5-7d-8SB" firstAttribute="leading" secondItem="NLn-8G-dsk" secondAttribute="trailing" constant="-359" id="qfK-If-8Kf"/>
                             <constraint firstItem="Tt5-7d-8SB" firstAttribute="leading" secondItem="NLn-8G-dsk" secondAttribute="leading" constant="16" id="r5s-Ku-3Ok"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="NLn-8G-dsk"/>
