@@ -18,6 +18,6 @@ public class Configuration {
 
     /// Merchant identifier
     struct Merchant {
-        static let identififer = "merchant.\(MainBundle.prefix).ApplePayDemo"
+        static let identififer = MainBundle.prefix
     }
 }

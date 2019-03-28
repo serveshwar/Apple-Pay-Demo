@@ -4,7 +4,7 @@
 <dict>
 	<key>com.apple.developer.in-app-payments</key>
 	<array>
-		<string>merchant.$(APPLE_PAY_BUNDLE_PREFIX).ApplePayDemo</string>
+		<string>$(APPLE_PAY_BUNDLE_PREFIX)</string>
 	</array>
 </dict>
 </plist>

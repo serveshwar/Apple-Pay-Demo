@@ -482,18 +482,21 @@
 		1B4676E62248BDCD00039879 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				APPLE_PAY_BUNDLE_PREFIX = "com.example.apple-samplecode";
+				APPLE_PAY_BUNDLE_PREFIX = merchant.com.sa.maana.dev;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ApplePayDemo/Resources/ApplePayDemo.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = G4N69KAQ56;
 				INFOPLIST_FILE = ApplePayDemo/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.demo.ApplePayDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sa.maana.dev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Maana Development";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -502,18 +505,21 @@
 		1B4676E72248BDCD00039879 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				APPLE_PAY_BUNDLE_PREFIX = "com.example.apple-samplecode";
+				APPLE_PAY_BUNDLE_PREFIX = merchant.com.sa.maana.dev;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ApplePayDemo/Resources/ApplePayDemo.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = G4N69KAQ56;
 				INFOPLIST_FILE = ApplePayDemo/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.demo.ApplePayDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sa.maana.dev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Maana Development";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
